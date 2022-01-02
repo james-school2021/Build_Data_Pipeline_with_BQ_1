@@ -1,0 +1,13 @@
+WITH user_transactions AS (
+  SELECT 
+                     896 as user_id, 12568001 as transaction_id, 1001 as product_id, '2021-03-07' as payment_date, 19.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568002 as transaction_id, 1002 as product_id, '2021-03-07' as payment_date, 9.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568003 as transaction_id, 1003 as product_id, '2021-03-08' as payment_date, 25.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568004 as transaction_id, 1007 as product_id, '2021-03-08' as payment_date, 63.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568005 as transaction_id, 1010 as product_id, '2021-03-10' as payment_date, 47.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568010 as transaction_id, 1011 as product_id, '2021-03-25' as payment_date, 124.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568017 as transaction_id, 1014 as product_id, '2021-03-25' as payment_date, 5.99 as total_cost
+    UNION ALL SELECT 896 as user_id, 12568033 as transaction_id, 1015 as product_id, '2021-03-30' as payment_date, 45.99 as total_cost
+)
+select * from user_transactions
+;
